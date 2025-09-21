@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int C;
+    cin >> C;
+    int R = 5*C-400;
+    int B;
+    if (R > 100){
+        B = -1;
+    }
+    else if (R == 100) {
+        B = 0;
+    }
+    else {
+        B = 1;
+    }
+    cout << R << endl << B;
+    return 0;
+}
