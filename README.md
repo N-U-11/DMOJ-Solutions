@@ -1,2 +1,4 @@
 # DMOJ-Solutions
-A collection of all the solutions of Dmoj I have created (CCC contest)
+A selection of all the solutions from Dmoj that I have created in (CCC contest)
+-------------------------------------------------------------------------------
+NOTE: All solutions were made using C++.
