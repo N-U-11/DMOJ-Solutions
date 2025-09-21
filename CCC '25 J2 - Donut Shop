@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N;
+    int L;
+    cin>>L;
+    int O = N;
+    for (int I = 0; I < L; I++){
+        char R;
+        cin >> R;
+        int A;
+        cin >> A;
+        if (R == '+'){
+            O += A;
+        }
+        else {
+            O -= A;
+        }
+    }
+    cout<< O;
+    return 0;
+}
