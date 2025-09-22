@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int A;
+    cin >> A;
+    int E;
+    cin >> E;
+    if (A >= 3 && E <= 4){
+        cout << "TroyMartian"<<endl;
+    }
+    if (A <= 6 && E >= 2){
+        cout << "VladSaturnian"<<endl;
+    }
+    if (A <= 2 && E <= 3){
+        cout << "GraemeMercurian" << endl;
+    }
+    return 0;
+}
