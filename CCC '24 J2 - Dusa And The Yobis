@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int D;
+    cin >> D;
+    bool k = false;
+    for (; k != true;){
+        int C;
+        cin >> C;
+        if (D > C){
+            D += C;
+            k = false;
+        }
+        else{
+            k = true;
+        }
+    }
+    cout << D;
+    return 0;
+}
