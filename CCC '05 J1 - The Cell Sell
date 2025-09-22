@@ -1,0 +1,49 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int D;
+    int E;
+    int W;
+    cin >> D;
+    cin >> E;
+    cin >> W;
+    float A = (D - 100);
+    float B = (D - 250);
+    if (B < 0){
+        B = (E * 0.35) + (W * 0.25);
+    }
+    else {
+         B = B * 0.45 + (E * 0.35) + (W * 0.25);
+    }
+    if (A < 0){
+         A = (E * 0.15) + (W * 0.20);
+    }
+    else {
+         A = A * 0.25 + (E * 0.15) + (W * 0.20);
+    }
+    if (A == (int)A){
+        cout << "Plan A costs "<< A << ".00" << endl;
+    }
+    else {
+        cout << "Plan A costs "<< A << endl;
+    }
+    if (B == (int)B){
+         cout << "Plan B costs "<< B << ".00" << endl;
+    }
+    else{
+        cout << "Plan B costs "<<B<<endl;
+    }
+
+    if (A == B){
+        cout<<"Plan A and B are the same price.";
+    }
+    else if (A > B){
+        cout << "Plan B is cheapest.";
+    }
+    else {
+        cout << "Plan A is cheapest.";
+    }
+    return 0;
+}
