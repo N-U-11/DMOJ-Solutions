@@ -1,0 +1,67 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N;
+    int status;
+    int K;
+    cin >> K;
+    if (K < N){
+        status = 1; //fish diving
+    }
+    else if (K > N){
+        status = 2; // fish rising
+    }
+    else if (K == N){
+        status = 3; //Fish At Constant Depth
+    }
+        int R;
+        cin >> R;
+        if (status == 1){
+            if (R >= N or R >= K){
+                status = 4;
+            }
+        }
+        else if (status == 2){
+            if (R <= N or R <= K){
+                status = 4;
+            }
+        }
+        else{
+            if (R != N or R != K){
+                status = 4;
+            }
+        }
+        int C;
+        cin >> C;
+        if (status == 1){
+            if (C >= N or C >= K or C >= R){
+                status = 4;
+            }
+        }
+        else if (status == 2){
+            if (C <= N or C <= K or C <= R){
+                status = 4;
+            }
+        }
+        else{
+            if (C != N or C != K or C != R){
+                status = 4;
+            }
+        }
+    if (status == 1){
+        cout<<"Fish Diving";
+    }
+    else if (status == 2){
+        cout << "Fish Rising";
+    }
+    else if (status == 3){
+        cout << "Fish At Constant Depth";
+    }
+    else{
+        cout << "No Fish";
+    }
+    return 0;
+}
